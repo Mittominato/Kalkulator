@@ -1,0 +1,157 @@
+@media (max-width:720px) {
+html{
+  box-sizing: border-box;
+  height: 100;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: pink;
+  display: flex;
+  font-family: 'Dosis', 'Sans-Serif';
+  font-display: swap;
+  height: inherit;
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper{
+  backdrop-filter: blur(5.5px);
+  .webkit-backdrop-filter: blur(5.5px);
+  border-radius: 6px;
+  box-shadow: 0 4px 30px rgba(35,35,35,0.1);
+  color: #232323;
+  backdrop-filter: blur(4px);
+  .webkit-backdrop-filter: blur(4px);
+  background: rgba(255,255,255,.1);
+  height: 540px;
+  margin-top: 350px;
+  padding: 20px 35px;
+  margin: auto;
+  width: 90%;
+}
+.screen{
+  backdrop-filter: blur(5px);
+  .webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255,255,255,0.75);
+  border: 1px solid rgba(255,255,255,0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35,35,35,0.1);
+  color: #232323;
+  font-size: 35px;
+  overflow: auto;
+  padding: 10px;
+  text-align: right;
+  width: 100%;
+}
+.screen2 {
+  display: none;
+  position: absolute;
+  backdrop-filter: blur(5px);
+  .webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255,255,255,0.75);
+  border: 1px solid rgba(255,255,255,0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35,35,35,0.1);
+  color: #232323;
+  font-size: 35px;
+  overflow: auto;
+  padding: 10px;
+  text-align: right;
+  margin-top: -60px;
+  width: 78%;
+}
+.calc-button-row{
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+.calc-button-samadengan {
+  backdrop-filter: blur(5.5px);
+  .webkit-backdrop-filter: blur(5.5px)
+  background: rgba(255,255,255,0.75);
+  border: 1px solid rgba(255,255,255,0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35,35,35,0.1);
+  color: #232323;
+  flex-basis: 20%;
+  font-family: inherit;
+  font-size: 24px;
+  height: 65px;
+  
+  background-color: salmon;
+  color: white;
+}
+.calc-button{
+  backdrop-filter: blur(5.5px);
+  .webkit-backdrop-filter: blur(5.5px)
+  background: rgba(255,255,255,0.75);
+  border: 1px solid rgba(255,255,255,0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35,35,35,0.1);
+  color: #232323;
+  flex-basis: 20%;
+  font-family: inherit;
+  font-size: 24px;
+  height: 65px;
+  
+  background-color: salmon;
+  color: white;
+}
+.calc-button:last-child{
+  backdrop-filter: blur(5.5px);
+  .webkit-backdrop-filter: blur(5.5px)
+  background: rgba(255,255,255,0.75);
+  border: 1px solid rgba(255,255,255,0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35,35,35,0.1);
+  color: #fff;
+  background: skyblue;
+}
+.calc-button:last-child:hover{
+  background-color: inherit;
+  color: inherit;
+}
+.calc-button:hover{
+  background-color: inherit;
+}
+.calc-button-double{
+  border: 1px;
+  border-radius: 16px;
+  flex-basis: 55%;
+  font-size: 24px;
+  
+}
+.calc-button-double:hover {
+    background-color: inherit;
+}
+.calc-button-triple:hover {
+  background-color: inherit;
+}
+.calc-button-triple{
+  border: 1px;
+  border-radius: 16px;
+  flex-basis: 73%;
+  font-size: 24px;
+  
+}
+}
+@media (min-width:720px) {
+.wrapper, .screen, .screen2, .calc-button-row, .calc-button-samadengan, .calc-button, .calc-button:last-child, .calc-button-double, .calc-button, .calc-button-triple {
+  display: none;
+}
+body::before {
+  content:"ONLY MOBILE DEVICES";
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100vh;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+}
