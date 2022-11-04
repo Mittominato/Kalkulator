@@ -116,7 +116,7 @@ body{
   background-color: inherit;
   color: inherit;
 }
-.calc-button:hover{
+.calc-button:active{
   background-color: inherit;
 }
 .calc-button-double{
@@ -126,10 +126,10 @@ body{
   font-size: 24px;
   
 }
-.calc-button-double:hover {
+.calc-button-double:active {
     background-color: inherit;
 }
-.calc-button-triple:hover {
+.calc-button-triple:active {
   background-color: inherit;
 }
 .calc-button-triple{
